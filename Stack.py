@@ -17,7 +17,7 @@ class Stack(object):
     if len( self._stack_container ) == 0:
       raise IndexError("Cannot pop element from an empty stack!")
   
-    self._stack_container.pop()
+    return self._stack_container.pop()
 
   def top(self):
     """Look up the elemen on the top of the stack."""
